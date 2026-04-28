@@ -3,7 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pacific Investment Group — Hawaii Hard Money Loans</title>
+<title>Pacific Investment Group — Hawaii Hard Money Loans | pacig.net</title>
+
+<!-- Primary SEO -->
+<meta name="description" content="Pacific Investment Group LLC provides fast hard money loans for Hawaii real estate — construction, fix-and-flip, bridge, land, and DSCR loans on O'ahu, Maui, Big Island & Kauai. Term sheets in 48 hours. Call (808) 523-2000.">
+<meta name="keywords" content="Hawaii hard money loans, hard money lender Hawaii, construction loans Hawaii, fix and flip loans Hawaii, bridge loans Hawaii, private money lender Hawaii, Oahu hard money, Maui hard money, Big Island hard money, Hawaii real estate financing, Pacific Investment Group">
+<meta name="author" content="Pacific Investment Group LLC">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pacig.net/">
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pacig.net/">
+<meta property="og:title" content="Pacific Investment Group — Hawaii Hard Money Loans">
+<meta property="og:description" content="Fast hard money loans for Hawaii real estate investors and developers. Construction, fix-and-flip, bridge & land loans. Term sheets in 48 hours. Serving O'ahu, Maui, Big Island & Kauai.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1542259009477-d625272157b7?w=1200&q=80">
+<meta property="og:site_name" content="Pacific Investment Group LLC">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://pacig.net/">
+<meta name="twitter:title" content="Pacific Investment Group — Hawaii Hard Money Loans">
+<meta name="twitter:description" content="Fast hard money loans for Hawaii real estate. Construction, fix-and-flip, bridge & land. Term sheets in 48 hrs. (808) 523-2000.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1542259009477-d625272157b7?w=1200&q=80">
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Pacific Investment Group LLC",
+  "description": "Hawaii hard money lender providing construction loans, fix-and-flip loans, bridge loans, land loans, and DSCR rental loans across all major Hawaii islands.",
+  "url": "https://pacig.net",
+  "telephone": "+1-808-523-2000",
+  "email": "apply@pacig.net",
+  "areaServed": [
+    {"@type": "State", "name": "Hawaii"},
+    {"@type": "City", "name": "Honolulu"},
+    {"@type": "City", "name": "Maui"},
+    {"@type": "City", "name": "Hilo"},
+    {"@type": "City", "name": "Kauai"}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "openingHours": "Mo-Fr 08:00-17:00",
+  "sameAs": ["https://pacig.net"]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -753,27 +804,27 @@
         <div class="form-row">
           <div class="form-group">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" placeholder="Kai" required>
+            <input type="text" id="fname" name="first_name" placeholder="Kai" required>
           </div>
           <div class="form-group">
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" placeholder="Nakamura" required>
+            <input type="text" id="lname" name="last_name" placeholder="Nakamura" required>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="kai@email.com" required>
+            <input type="email" id="email" name="email" placeholder="kai@email.com" required>
           </div>
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="(808) 000-0000">
+            <input type="tel" id="phone" name="phone" placeholder="(808) 000-0000">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label for="island">Island</label>
-            <select id="island">
+            <select id="island" name="island">
               <option value="">Select Island</option>
               <option>O'ahu</option>
               <option>Maui</option>
@@ -785,7 +836,7 @@
           </div>
           <div class="form-group">
             <label for="loantype">Loan Type</label>
-            <select id="loantype">
+            <select id="loantype" name="loan_type">
               <option value="">Select Type</option>
               <option>Construction</option>
               <option>Fix &amp; Flip</option>
@@ -799,11 +850,11 @@
         <div class="form-row">
           <div class="form-group">
             <label for="amount">Loan Amount</label>
-            <input type="text" id="amount" placeholder="e.g. $850,000">
+            <input type="text" id="amount" name="loan_amount" placeholder="e.g. $850,000">
           </div>
           <div class="form-group">
             <label for="timeline">Timeline to Close</label>
-            <select id="timeline">
+            <select id="timeline" name="timeline">
               <option value="">Select</option>
               <option>ASAP / &lt;2 weeks</option>
               <option>2–4 Weeks</option>
@@ -814,7 +865,7 @@
         </div>
         <div class="form-group">
           <label for="description">Project Description</label>
-          <textarea id="description" placeholder="Tell us about the property, project scope, and your experience as an investor or developer…"></textarea>
+          <textarea id="description" name="project_description" placeholder="Tell us about the property, project scope, and your experience as an investor or developer…"></textarea>
         </div>
         <button type="submit" class="form-submit">Submit Application →</button>
         <p class="form-note">No fees. No obligation. Responses within 1 business day.</p>
