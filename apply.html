@@ -2,247 +2,113 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apply for a Loan — Pac I G, LLC | pacig.net</title>
-<meta name="description" content="Apply for a Hawaii construction loan, rehab loan, fix & flip loan, bridge loan or hard money loan with Pacific Investment Group LLC. Fast approvals. (808) 523-2000.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Apply — Pac I G, LLC Loan Application | pacig.net</title>
+<meta name="description" content="Apply for a Hawaii construction loan, rehab loan, fix & flip, bridge or hard money loan with Pacific Investment Group LLC. (808) 523-2000.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://pacig.net/apply.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --gold: #C9A84C;
-    --gold-light: #E8D49A;
-    --gold-dark: #8B6914;
-    --ocean: #1A4A5C;
-    --ocean-mid: #2A6B82;
-    --sand: #F5EFE0;
-    --sand-dark: #E8D9B8;
-    --lava: #2C1810;
-    --white: #FDFAF4;
-    --text: #1C1A16;
-    --text-muted: #5C5448;
-    --serif: 'Cormorant Garamond', Georgia, serif;
-    --sans: 'DM Sans', system-ui, sans-serif;
-  }
 
   html, body {
-    font-family: var(--sans);
-    background: var(--lava);
-    color: var(--white);
-    min-height: 100vh;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background: #1A4A5C;
+    height: 100%;
+    overflow-x: hidden;
   }
 
-  /* ── SLIM NAV ── */
-  nav {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0.9rem 2.5rem;
-    background: rgba(28,26,22,0.97);
-    border-bottom: 1px solid rgba(201,168,76,0.25);
-    position: sticky; top: 0; z-index: 50;
+  /* ── ONE THIN BAR ── */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.2rem;
+    background: #2C1810;
+    border-bottom: 2px solid #C9A84C;
+    height: 44px;
   }
-  .nav-logo {
-    font-family: var(--serif); font-size: 1.15rem; font-weight: 400;
-    color: var(--gold-light); text-decoration: none; letter-spacing: 0.03em;
+  .topbar-logo {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1rem; font-weight: 400;
+    color: #E8D49A; text-decoration: none;
+    white-space: nowrap;
   }
-  .nav-logo span { font-style: italic; color: var(--gold); }
-  .nav-right { display: flex; align-items: center; gap: 2rem; }
-  .nav-phone {
-    font-size: 0.82rem; color: rgba(245,239,224,0.55);
-    text-decoration: none; letter-spacing: 0.04em;
+  .topbar-logo em { font-style: italic; color: #C9A84C; }
+  .topbar-right {
+    display: flex; align-items: center; gap: 1rem;
   }
-  .nav-phone:hover { color: var(--gold-light); }
-  .nav-back {
-    font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--lava);
-    background: var(--gold); padding: 0.45rem 1.1rem;
-    text-decoration: none; transition: background 0.2s;
+  .topbar-phone {
+    font-size: 0.78rem; color: rgba(245,239,224,0.55);
+    text-decoration: none;
   }
-  .nav-back:hover { background: var(--gold-light); }
+  .topbar-phone:hover { color: #E8D49A; }
+  .topbar-back {
+    font-size: 0.7rem; font-weight: 500;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: #2C1810; background: #C9A84C;
+    padding: 0.3rem 0.8rem; text-decoration: none;
+    transition: background 0.2s; white-space: nowrap;
+  }
+  .topbar-back:hover { background: #E8D49A; }
 
-  /* ── INTRO BAND ── */
-  .intro-band {
-    background: rgba(28,26,22,0.85);
-    border-bottom: 1px solid rgba(201,168,76,0.15);
-    padding: 2rem 2.5rem 1.8rem;
-    text-align: center;
-  }
-  .intro-band .eyebrow {
-    font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em;
-    text-transform: uppercase; color: var(--gold);
-    display: inline-block; margin-bottom: 0.6rem;
-  }
-  .intro-band h1 {
-    font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.4rem);
-    font-weight: 300; color: var(--white); line-height: 1.15;
-    margin-bottom: 0.6rem;
-  }
-  .intro-band h1 em { font-style: italic; color: var(--gold-light); }
-  .intro-band p {
-    font-size: 0.88rem; color: rgba(245,239,224,0.6);
-    max-width: 540px; margin: 0 auto 1.2rem; line-height: 1.7;
-  }
-  .badges {
-    display: flex; flex-wrap: wrap; gap: 0.5rem;
-    justify-content: center; margin-bottom: 0.5rem;
-  }
-  .badge {
-    font-size: 0.67rem; font-weight: 500; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--gold-light);
-    border: 1px solid rgba(201,168,76,0.3);
-    padding: 0.25rem 0.7rem; background: rgba(201,168,76,0.07);
-  }
-
-  /* ── WHAT TO EXPECT ── */
-  .expect-strip {
-    background: var(--ocean);
-    padding: 1.2rem 2.5rem;
-    display: flex; justify-content: center; gap: 3rem;
-    flex-wrap: wrap;
-    border-bottom: 2px solid var(--gold-dark);
-  }
-  .expect-item {
-    display: flex; align-items: center; gap: 0.6rem;
-    font-size: 0.8rem; color: rgba(245,239,224,0.7);
-  }
-  .expect-item span:first-child { color: var(--gold); font-size: 1rem; }
-
-  /* ── JOTFORM EMBED ── */
-  .form-container {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem 3rem;
-  }
-  .jotform-wrap {
-    background: var(--white);
-    overflow: hidden;
-  }
-  .jotform-wrap iframe {
+  /* ── JOTFORM FILLS THE REST ── */
+  .form-wrap {
     width: 100%;
-    min-height: 900px;
+    /* full viewport minus the 44px topbar */
+    height: calc(100vh - 44px);
+  }
+  .form-wrap iframe {
+    width: 100%;
+    height: 100%;
     border: none;
     display: block;
   }
 
-  /* ── FOOTER ── */
-  footer {
-    background: rgba(20,16,12,0.95);
-    border-top: 1px solid rgba(201,168,76,0.15);
-    padding: 1.5rem 2.5rem;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 1rem;
-  }
-  footer .f-logo {
-    font-family: var(--serif); font-size: 1rem; font-weight: 300;
-    color: var(--gold-light);
-  }
-  footer .f-logo span { font-style: italic; color: var(--gold); }
-  footer .f-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
-  footer .f-links a {
-    font-size: 0.75rem; color: rgba(245,239,224,0.35);
-    text-decoration: none; transition: color 0.2s;
-  }
-  footer .f-links a:hover { color: var(--gold-light); }
-  footer .f-copy {
-    width: 100%; text-align: center;
-    font-size: 0.65rem; color: rgba(245,239,224,0.2);
-    padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.05);
-    margin-top: 0.5rem; line-height: 1.7;
-  }
-
-  @media (max-width: 600px) {
-    nav { padding: 0.8rem 1rem; }
-    .intro-band { padding: 1.5rem 1rem 1.2rem; }
-    .expect-strip { gap: 1rem; padding: 1rem; }
-    .form-container { padding: 1rem 0 2rem; }
-    footer { padding: 1.2rem 1rem; flex-direction: column; align-items: flex-start; }
+  @media (max-width: 480px) {
+    .topbar { padding: 0.5rem 0.8rem; }
+    .topbar-logo { font-size: 0.88rem; }
+    .topbar-phone { display: none; }
   }
 </style>
 </head>
 <body>
 
-<!-- SLIM NAV -->
-<nav>
-  <a class="nav-logo" href="index.html" target="_blank" rel="noopener">Pacific Investment <span>Group</span></a>
-  <div class="nav-right">
-    <a class="nav-phone" href="tel:+18085232000">(808) 523-2000</a>
-    <a class="nav-back" href="index.html" target="_blank" rel="noopener">← Main Site</a>
-  </div>
-</nav>
-
-<!-- INTRO -->
-<div class="intro-band">
-  <span class="eyebrow">Loan Application</span>
-  <h1>Apply Now — <em>Pac I G, LLC</em></h1>
-  <p>Hawaii &amp; Nationwide funding for real estate investors, builders, contractors, and owners. Asset-based lending — the property qualifies the loan, not your paperwork.</p>
-  <div class="badges">
-    <span class="badge">Construction</span>
-    <span class="badge">Rehab</span>
-    <span class="badge">Fix &amp; Flip</span>
-    <span class="badge">Bridge</span>
-    <span class="badge">Hard Money</span>
-    <span class="badge">Cash Out Equity</span>
-    <span class="badge">Contractor Loans</span>
-    <span class="badge">Uninsured Damage</span>
-    <span class="badge">Title Problem Loans</span>
+<!-- ONE THIN BAR — 44px total -->
+<div class="topbar">
+  <a class="topbar-logo" href="index.html" target="_blank" rel="noopener">
+    Pacific Investment <em>Group</em>
+  </a>
+  <div class="topbar-right">
+    <a class="topbar-phone" href="tel:+18085232000">(808) 523-2000</a>
+    <a class="topbar-back" href="index.html" target="_blank" rel="noopener">← Main Site</a>
   </div>
 </div>
 
-<!-- EXPECT STRIP -->
-<div class="expect-strip">
-  <div class="expect-item"><span>✦</span> No credit score minimum</div>
-  <div class="expect-item"><span>✦</span> No W-2s or bank statements</div>
-  <div class="expect-item"><span>✦</span> ~26 questions · under 10 min</div>
-  <div class="expect-item"><span>✦</span> Response within 1 business day</div>
+<!-- JOTFORM — fills everything below the bar -->
+<div class="form-wrap">
+  <iframe
+    id="jf"
+    title="Pac I G, LLC Loan Application"
+    src="https://form.jotform.com/240036322954148"
+    allow="geolocation; microphone; camera"
+    allowfullscreen
+    scrolling="yes">
+  </iframe>
 </div>
-
-<!-- JOTFORM EMBED -->
-<div class="form-container">
-  <div class="jotform-wrap">
-    <iframe
-      id="jotform-iframe"
-      title="Pac I G, LLC Loan Application"
-      src="https://form.jotform.com/240036322954148"
-      allow="geolocation; microphone; camera"
-      allowfullscreen
-      scrolling="yes">
-    </iframe>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div class="f-logo">Pacific Investment <span>Group</span></div>
-  <div class="f-links">
-    <a href="index.html" target="_blank" rel="noopener">Main Site</a>
-    <a href="tel:+18085232000">(808) 523-2000</a>
-    <a href="mailto:apply@pacig.net">apply@pacig.net</a>
-  </div>
-  <div class="f-copy">
-    © 2025 Pac I G, LLC · Pacific Investment Group LLC · pacig.net · All loans are for business or investment purposes only and are secured by real property. This website does not constitute an offer to lend. All loans subject to underwriting approval. NMLS #XXXXXX.
-  </div>
-</footer>
 
 <script>
-  // Auto-resize iframe to fit JotForm content height
+  // Let JotForm resize itself; scroll back to top of iframe on step change
   window.addEventListener('message', function(e) {
-    if (e.data && typeof e.data === 'object' && e.data.action === 'setHeight') {
-      var iframe = document.getElementById('jotform-iframe');
-      if (iframe && e.data.height) {
-        iframe.style.minHeight = (parseInt(e.data.height) + 40) + 'px';
+    if (!e.data) return;
+    try {
+      var msg = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+      if (msg.action === 'scrollIntoView') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
-    }
-    // JotForm also sends scroll-to-top on step change
-    if (e.data && typeof e.data === 'string') {
-      try {
-        var msg = JSON.parse(e.data);
-        if (msg.action === 'scrollIntoView') {
-          document.getElementById('jotform-iframe').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      } catch(err) {}
-    }
+    } catch(err) {}
   });
 </script>
 
